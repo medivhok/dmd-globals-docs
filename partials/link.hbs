@@ -3,46 +3,37 @@
 {{~#if html~}}
 <code>
 
-{{~#globallink to~}}
-{{#if url~}}
-<a href="{{{url}}}">{{#if ../../caption}}{{../../../caption}}{{else}}{{name}}{{/if}}</a>
-{{~else~}}
-{{#if ../../caption}}{{../../../caption}}{{else}}{{name}}{{/if~}}
-
-{{~else~}}
-
 {{~#link to~}}
 {{#if url~}}
 <a href="{{{url}}}">{{#if ../../caption}}{{../../../caption}}{{else}}{{name}}{{/if}}</a>
 {{~else~}}
+{{~#globallink to~}}
+{{#if url~}}
+<a href="{{{url}}}">{{#if ../../caption}}{{../../../caption}}{{else}}{{name}}{{/if}}</a>
+{{~else}}
 {{#if ../../caption}}{{../../../caption}}{{else}}{{name}}{{/if~}}
-{{/if~}}
-{{/link~}}
-
 {{/if~}}
 {{/globallink~}}
 
+{{/if~}}
+{{/link~}}
+
 </code>
-{{~else~}}
-
-
-{{#globallink to~}}
-{{#if url~}}
-[<code>{{#if ../../caption}}{{escape ../../../caption}}{{else}}{{escape name}}{{/if}}</code>]({{{url}}})
-{{~else~}}
-<code>{{#if ../../caption}}{{escape ../../../caption}}{{else}}{{escape name}}{{/if~}}</code>
-
 {{~else~}}
 
 {{#link to~}}
 {{#if url~}}
 [<code>{{#if ../../caption}}{{escape ../../../caption}}{{else}}{{escape name}}{{/if}}</code>]({{{url}}})
 {{~else~}}
+{{~#globallink to~}}
+{{#if url~}}
+[<code>{{#if ../../caption}}{{escape ../../../caption}}{{else}}{{escape name}}{{/if}}</code>]({{{url}}})
+{{~else~}}
 <code>{{#if ../../caption}}{{escape ../../../caption}}{{else}}{{escape name}}{{/if~}}</code>
 {{~/if~}}
-{{/link~}}
+{{/globallink~}}
 
 {{~/if~}}
-{{/globallink~}}
+{{/link~}}
 
 {{/if~}}
