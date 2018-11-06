@@ -1,0 +1,13 @@
+{
+  "name": "dmd-globals-docs",
+  "version": "0.0.1",
+  "description": "Plugin that adds globals-docs to jsdoc-to-markdown",
+  "main": "lib/index.js",
+  "author": "Jean Gregory Verret <gregory.verret@gmail.com",
+  "license": "MIT",
+  "keywords": [],
+  "scripts": {},
+  "dependencies": {
+    "globals-docs": "^2.4.0"
+  }
+}
