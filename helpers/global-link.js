@@ -1,7 +1,7 @@
 const gd = require('globals-docs');
 
 
-exports.link = (longname, options) => {
+exports.globallink = (longname, options) => {
   let result = null;
 
   if (longname && typeof longname === 'string') {
