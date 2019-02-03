@@ -1,13 +1,27 @@
 {
   "name": "dmd-globals-docs",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Plugin that adds globals-docs to jsdoc-to-markdown",
   "main": "lib/index.js",
   "author": "Jean Gregory Verret <gregory.verret@gmail.com",
   "license": "MIT",
   "keywords": [],
-  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medivhok/dmd-globals-docs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/medivhok/dmd-globals-docs/issues"
+  },
+  "scripts": {
+    "test": "nyc mocha"
+  },
   "dependencies": {
     "globals-docs": "^2.4.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
   }
 }
