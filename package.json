@@ -5,7 +5,16 @@
   "main": "lib/index.js",
   "author": "Jean Gregory Verret <gregory.verret@gmail.com",
   "license": "MIT",
-  "keywords": [],
+  "keywords": [
+    "jsdoc",
+    "jsdoc2md",
+    "dmd",
+    "dmd-plugin",
+    "plugin",
+    "markdown",
+    "documentation",
+    "globals-docs"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/medivhok/dmd-globals-docs.git"
